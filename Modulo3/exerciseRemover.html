@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercise remover</title>
+</head>
+<body>
+    <script>
+        function ordenaNum(a,b){
+            return a-b;
+        }
+        var arr = [3,4,5,77,33,22,4,1,55,2];
+        // arr.sort();
+        arr.sort(ordenaNum);
+        arr.push("cat");
+        arr.push("dog");
+        console.log(arr);
+        var q = prompt("What do you want to remove?");
+        var finder = arr.indexOf(q);
+        var remover = (finder !== -1) ? arr.splice(finder, 1) : "elemento não encontrado";
+        console.log(arr);
+        console.log(remover);
+        
+    </script>
+</body>
+</html>

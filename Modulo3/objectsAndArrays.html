@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Objects and Arrays</title>
+</head>
+
+<body>
+    <script>
+        var bob = {
+            age: 30,
+            hair: "brown",
+            eyes: "blue",
+            works: "developer"
+        };
+        var friends = {
+            friend1: bob,
+            friend2: {
+                age: 31,
+                hair: "black"
+            }
+        };
+        var friends1 = [bob, {
+            age:31,
+            hair: "black"
+        }]
+        console.log(friends.friend1.works);//friends["friend1"].works also works
+        console.log(friends1[1].age);
+        
+    </script>
+</body>
+
+</html>

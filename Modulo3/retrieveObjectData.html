@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Retrieve Data Object</title>
+</head>
+<body>
+    <script>
+        var car = { color: "red", make: "ford", doors: 5, model: "mustang" };
+        console.log(car.color);
+        console.log(car.make);
+        console.log(car.doors);
+        console.log(car.model);
+        var prop = "color";
+        console.log(car["color"]);
+        console.log(car[prop]);//Gives more flexibility on retrieving data
+        var car2 = {color: "blue", make: "gm", doors: 4, model: "impala"};
+        var property = prompt("What data do you want to retrieve (color, make, doors, model)?");
+        alert(car2[property]);
+    </script>
+</body>
+</html>

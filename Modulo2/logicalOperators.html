@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Logical Operators</title>
+</head>
+<body>
+    <script>
+        var a = 5;
+        var b = 10;
+        var c = "5";
+        console.log(a == 5 && a == c);//True due to type coercion
+        console.log(a == 5 && a === c);//False because the type of a is different of c
+        console.log(a == 5 || a===c)//True because at least one statement is true
+        console.log(!(a===c));//True beacuse !false is true
+        console.log("Exercise");
+        b++;
+        var d = ((b%2) > 0) ? "odd":"even";
+        console.log(typeof a == "number");
+        console.log(typeof c == typeof "number");//Nesse caso, number é ums string
+        console.log(d == "odd" && b > 10 && b >= (a * 2));
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Array properties</title>
+</head>
+<body>
+    <script>
+        var task = ["Aprender Javascript", "Conseguir um emprego", "Juntar dinheiro", "Sair do Brasil", "eee"];
+        var progress = ["feito", "em progresso", "a fazer"];
+        // var question1 = prompt("Qual tarefa (1-" + task.length + ")");
+        // var question2 = prompt("Status 1 = feito; 2 = Em progresso; 3 = A fazer");
+        // console.log("Tarefa: " + task[question1 - 1] + " / Status: " + progress[question2 - 1]);
+        console.log(task.length);
+        console.log(task[task.length - 1]);
+        task [task.length] = "aaa";
+        task[3] = "New value";
+        console.log(task[task.length - 2]);
+        task[7] = "Blavlasad";//Adiciona dois elementos vazios no fim do array e adiciona mais um com o valor de Blavlasad
+        console.log(task);
+        task[10] = "uuu";
+        console.log(typeof task);
+        console.log(Array.isArray(task));
+    </script>
+</body>
+</html>

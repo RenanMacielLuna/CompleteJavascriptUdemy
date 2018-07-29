@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Intro DOM</title>
+</head>
+
+<body>
+    <div id="output">Hello World</div>
+    <input type="text" id="texto">
+    <div id="app"></div>
+    <input type="text" id="val">
+    <div id="desafio"></div>
+    <script>
+        // var output = document.getElementById("output");
+        // output.innerHTML = "Hello <br> World"
+        // output.innerText = "Hello <br> world"
+        // //document.write("Hello world!");
+        // console.log(document);
+
+        var app = document.getElementById("app");
+        app.innerHTML = "Welcome to my page";
+
+        var output = document.getElementById('output').innerHTML
+        var application = document.getElementById('texto')
+        application.value = output;
+
+
+        var nome = prompt("Qual é o seu nome? ");
+        var des = document.getElementById('desafio');
+        des.innerHTML = "Bem vindo, " + nome;
+    </script>
+</body>
+
+</html>

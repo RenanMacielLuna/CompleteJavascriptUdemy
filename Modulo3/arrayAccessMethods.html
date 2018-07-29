@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Array Access Methods</title>
+</head>
+<body>
+    <script>
+        var newHolder = ["cat", "dog", "rabbit", "bird"];
+        var question = prompt("Type an animal to see if it is on the array");
+        var posIndex = newHolder.indexOf(question);
+        var msg = (posIndex !== -1) ? "The array has " + question : "The array does not have " + question;
+        //You can also use the method includes that returns a boolean value. Check the line below.
+        var resBool = newHolder.includes(question);
+        console.log(resBool);
+        console.log(msg);
+        console.log(newHolder.slice(1, 3))//Returns a part of the array  https://www.w3schools.com/jsref/jsref_slice_array.asp
+        //https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array
+    </script>
+</body>
+</html>

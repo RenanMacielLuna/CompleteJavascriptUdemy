@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Modify the array</title>
+</head>
+<body>
+
+    <script>
+        /*
+        var animals = ["cat", "dog", "rabbit", "bird", "fish"];
+        animals.push("sheep");//Add item at the end of an array
+        console.log(animals);
+        animals.pop();//Remove the last item of an array
+        console.log(animals);
+        animals.shift();//Remove first item of the array
+        console.log(animals);
+        animals.unshift("horse");//Add first item to array
+        console.log(animals);
+        var remove1 = animals.pop();
+        console.log(remove1);
+        animals.splice(2,2);//Arg 1: position to start removing. Arg 2: number of items to be removed
+        console.log(animals);
+        animals.reverse()//Reverses the order of items
+        console.log(animals);
+        animals.sort()//Sorts the array. Numbers are the first element to be sorted, then strings comes after
+        console.log(animals); 
+        */
+        var animals = ["cat", "dog", "rabbit", "bird", "fish", "zebra"];
+        //Exercise: sort the array, then reverse it.
+        /*
+        animals.sort();
+        animals.reverse();
+        */
+        //In JS, you can chain methods
+        // animals.sort().reverse();
+        // console.log(animals);
+        var tamanhoOriginal = animals.length;
+        animals[20] = "horse";
+        animals.fill("mouse", tamanhoOriginal, (animals.length-1));//Reference: https://www.w3schools.com/jsref/jsref_fill.asp
+        
+    </script>
+</body>
+</html>

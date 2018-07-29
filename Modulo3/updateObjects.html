@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Update Objects</title>
+</head>
+<body>
+    <script>
+        var car = { color: "red", make: "ford", doors: 5, model: "mustang" };
+        car.color = "blue";//Can be done in the console
+        console.log(car);
+        delete car.color;//Returns true because the object car has a property named color
+        console.log(car);
+        car.color = "purple";//The color property now is the last one
+        console.log(car);
+        var website = {url: "https://www.youtube.com/watch?v=2uA0rXgC4H4", domain: "youtube", owner: "Google", firstYear: 2005};//If you click o the arrow pointing to the right, the console shows all the attributes in alphabetical order
+        console.log(website);
+        var newDomain = prompt("Put a new domain here");
+        website["domain"] = newDomain;
+        console.log(website);
+    </script>
+</body>
+</html>

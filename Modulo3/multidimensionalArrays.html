@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Multidimensional Arrays</title>
+</head>
+<body>
+    <script>
+        var arr = [["cat", "dog", "fish"], [4,2,5,6,7,1], "hello", 50];
+        console.log(arr[3]);
+        console.log(arr[0][1]);
+        var myFriends = [["Caio", "Vitor", "Francisco"], [2014, 2013, 2015]];
+        var question = prompt("Which friend ?");
+        var questionNumber = parseInt(question);
+        console.log("You met " + myFriends[0][questionNumber] + " in " + myFriends[1][questionNumber]);     
+    </script>
+</body>
+</html>

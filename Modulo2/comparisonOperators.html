@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Comparison Operators</title>
+</head>
+<body>
+    <script>    
+        var a = 5;
+        var b = 4;
+        var c = "5";
+        console.log(a==b);
+        console.log(a==(b+1));
+        console.log(a==c); //True due to type coercion
+        console.log(a===c)//False because a is a number and c is a string
+        var myTernary = (a===c)? "Equal": "Not"; //Ternary operator
+
+        //Olhar essa página depois: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Operators/Comparison_Operators
+
+        //Exercise
+
+        var valor1 = parseInt(prompt("Digite um valor"));
+        var valor2 = parseInt(prompt("Digite outro valor"));
+        var resultado = (valor1 >= valor2) ? "maior ou igual" : "menor";
+        alert ("O valor1 é " + resultado + " que o valor2");
+    </script>
+</body>
+</html>
