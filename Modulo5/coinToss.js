@@ -4,13 +4,13 @@ var caraCoroa = Math.random();
 console.log(caraCoroa);
 
 if (caraCoroa >= 0.5) {
-    caraCoroa = "coroa";
+  caraCoroa = "coroa";
 } else {
-    caraCoroa = "cara";
+  caraCoroa = "cara";
 }
 
 if (coinSide === caraCoroa) {
-    alert("Você ganhou");
+  alert("Você ganhou");
 } else {
-    alert("Você perdeu");
+  alert("Você perdeu");
 }
