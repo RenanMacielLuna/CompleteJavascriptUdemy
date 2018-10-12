@@ -16,10 +16,10 @@ console.log(response);
 
 var a = "hello";
 
-function concatenar(str1) {
+function concatenate(str1) {
   var b = " world";
   str1 += b;
   output.innerHTML += str1;
 }
 
-concatenar(a);
+concatenate(a);
